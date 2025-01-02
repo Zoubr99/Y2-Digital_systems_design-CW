@@ -1,1 +1,1 @@
-# STM32-2-FPGA-Servo_controller
+# individual second year digital systems design coursework, using SystemVerilog and Testbenches
