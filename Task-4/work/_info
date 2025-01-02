@@ -1,0 +1,136 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/user/Documents/GitHub/individual-coursework-c1-Zoubrninety9/Task-4
+vdata_path
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1680149962
+!i10b 1
+!s100 71g45IJ6ZGbQl62]4VD7z3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I:Yhj^OGlVXzOUT4F>@>LC0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1677900315
+8C:/Users/user/Documents/GitHub/individual-coursework-c1-Zoubrninety9/Task-4/data_path.sv
+FC:/Users/user/Documents/GitHub/individual-coursework-c1-Zoubrninety9/Task-4/data_path.sv
+!i122 152
+L0 1 99
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1680149962.000000
+!s107 C:/Users/user/Documents/GitHub/individual-coursework-c1-Zoubrninety9/Task-4/data_path.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/user/Documents/GitHub/individual-coursework-c1-Zoubrninety9/Task-4/data_path.sv|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vfour2eight
+R1
+!s110 1680153359
+!i10b 1
+!s100 _9jYhiz0<^FW=OZ^nz>HJ1
+R2
+IPh1gX8YNISDCgh=EEDU<03
+R3
+S1
+R0
+w1677900548
+8C:/Users/user/Documents/GitHub/individual-coursework-c1-Zoubrninety9/Task-4/four2eight.sv
+FC:/Users/user/Documents/GitHub/individual-coursework-c1-Zoubrninety9/Task-4/four2eight.sv
+!i122 159
+L0 1 30
+R4
+r1
+!s85 0
+31
+!s108 1680153359.000000
+!s107 C:/Users/user/Documents/GitHub/individual-coursework-c1-Zoubrninety9/Task-4/four2eight.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/user/Documents/GitHub/individual-coursework-c1-Zoubrninety9/Task-4/four2eight.sv|
+!i113 1
+R5
+R6
+vsequencer
+R1
+!s110 1680153948
+!i10b 1
+!s100 KY>6EHiZUEERK5gg3T3@i3
+R2
+IF5d0z:b:^gbISJ=EdNLVc2
+R3
+S1
+R0
+w1680145324
+8C:/Users/user/Documents/GitHub/individual-coursework-c1-Zoubrninety9/Task-4/sequencer.sv
+FC:/Users/user/Documents/GitHub/individual-coursework-c1-Zoubrninety9/Task-4/sequencer.sv
+!i122 164
+L0 1 57
+R4
+r1
+!s85 0
+31
+!s108 1680153948.000000
+!s107 C:/Users/user/Documents/GitHub/individual-coursework-c1-Zoubrninety9/Task-4/sequencer.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/user/Documents/GitHub/individual-coursework-c1-Zoubrninety9/Task-4/sequencer.sv|
+!i113 1
+R5
+R6
+vsequencer_tb
+R1
+!s110 1680153988
+!i10b 1
+!s100 ^n0f]UhJ6[TX:OkAXm7VC0
+R2
+IMlR16DHXEkY]8JKN5D5V_0
+R3
+S1
+R0
+w1680153937
+8C:/Users/user/Documents/GitHub/individual-coursework-c1-Zoubrninety9/Task-4/sequencer_tb.sv
+FC:/Users/user/Documents/GitHub/individual-coursework-c1-Zoubrninety9/Task-4/sequencer_tb.sv
+!i122 165
+L0 1 137
+R4
+r1
+!s85 0
+31
+!s108 1680153988.000000
+!s107 C:/Users/user/Documents/GitHub/individual-coursework-c1-Zoubrninety9/Task-4/sequencer_tb.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/user/Documents/GitHub/individual-coursework-c1-Zoubrninety9/Task-4/sequencer_tb.sv|
+!i113 1
+R5
+R6
+vsystem_tb
+R1
+!s110 1680176343
+!i10b 1
+!s100 5`cOo@;7aJdH2d5FFmd1Q0
+R2
+IA=PR:7Y<n>VjNnZ?D40Mf0
+R3
+S1
+R0
+w1680176338
+8C:/Users/user/Documents/GitHub/individual-coursework-c1-Zoubrninety9/Task-4/system_tb.sv
+FC:/Users/user/Documents/GitHub/individual-coursework-c1-Zoubrninety9/Task-4/system_tb.sv
+!i122 169
+L0 1 60
+R4
+r1
+!s85 0
+31
+!s108 1680176343.000000
+!s107 C:/Users/user/Documents/GitHub/individual-coursework-c1-Zoubrninety9/Task-4/system_tb.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/user/Documents/GitHub/individual-coursework-c1-Zoubrninety9/Task-4/system_tb.sv|
+!i113 1
+R5
+R6

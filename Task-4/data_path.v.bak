@@ -1,0 +1,209 @@
+// Copyright (C) 2020  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// PROGRAM		"Quartus Prime"
+// VERSION		"Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
+// CREATED		"Fri Mar 03 23:52:30 2023"
+
+module data_path(
+	CLOCK,
+	ENABLE_LOW,
+	ENABLE_HIGH,
+	N_RESET,
+	DATA_IN,
+	DATA_OUT
+);
+
+
+input wire	CLOCK;
+input wire	ENABLE_LOW;
+input wire	ENABLE_HIGH;
+input wire	N_RESET;
+input wire	[3:0] DATA_IN;
+output wire	[7:0] DATA_OUT;
+
+wire	CLK;
+wire	[3:0] D;
+wire	EN_H;
+wire	EN_L;
+wire	logic_high;
+reg	[7:0] Q;
+wire	SYSTEM_RESET;
+
+
+
+
+
+always@(posedge CLK or negedge SYSTEM_RESET or negedge logic_high)
+begin
+if (!SYSTEM_RESET)
+	begin
+	Q[7] <= 0;
+	end
+else
+if (!logic_high)
+	begin
+	Q[7] <= 1;
+	end
+else
+if (EN_H)
+	begin
+	Q[7] <= D[3];
+	end
+end
+
+
+always@(posedge CLK or negedge SYSTEM_RESET or negedge logic_high)
+begin
+if (!SYSTEM_RESET)
+	begin
+	Q[5] <= 0;
+	end
+else
+if (!logic_high)
+	begin
+	Q[5] <= 1;
+	end
+else
+if (EN_H)
+	begin
+	Q[5] <= D[1];
+	end
+end
+
+
+always@(posedge CLK or negedge SYSTEM_RESET or negedge logic_high)
+begin
+if (!SYSTEM_RESET)
+	begin
+	Q[4] <= 0;
+	end
+else
+if (!logic_high)
+	begin
+	Q[4] <= 1;
+	end
+else
+if (EN_H)
+	begin
+	Q[4] <= D[0];
+	end
+end
+
+
+always@(posedge CLK or negedge SYSTEM_RESET or negedge logic_high)
+begin
+if (!SYSTEM_RESET)
+	begin
+	Q[3] <= 0;
+	end
+else
+if (!logic_high)
+	begin
+	Q[3] <= 1;
+	end
+else
+if (EN_L)
+	begin
+	Q[3] <= D[3];
+	end
+end
+
+
+always@(posedge CLK or negedge SYSTEM_RESET or negedge logic_high)
+begin
+if (!SYSTEM_RESET)
+	begin
+	Q[2] <= 0;
+	end
+else
+if (!logic_high)
+	begin
+	Q[2] <= 1;
+	end
+else
+if (EN_L)
+	begin
+	Q[2] <= D[2];
+	end
+end
+
+
+always@(posedge CLK or negedge SYSTEM_RESET or negedge logic_high)
+begin
+if (!SYSTEM_RESET)
+	begin
+	Q[1] <= 0;
+	end
+else
+if (!logic_high)
+	begin
+	Q[1] <= 1;
+	end
+else
+if (EN_L)
+	begin
+	Q[1] <= D[1];
+	end
+end
+
+
+always@(posedge CLK or negedge SYSTEM_RESET or negedge logic_high)
+begin
+if (!SYSTEM_RESET)
+	begin
+	Q[0] <= 0;
+	end
+else
+if (!logic_high)
+	begin
+	Q[0] <= 1;
+	end
+else
+if (EN_L)
+	begin
+	Q[0] <= D[0];
+	end
+end
+
+
+
+always@(posedge CLK or negedge SYSTEM_RESET or negedge logic_high)
+begin
+if (!SYSTEM_RESET)
+	begin
+	Q[6] <= 0;
+	end
+else
+if (!logic_high)
+	begin
+	Q[6] <= 1;
+	end
+else
+if (EN_H)
+	begin
+	Q[6] <= D[2];
+	end
+end
+
+assign	DATA_OUT = Q;
+assign	SYSTEM_RESET = N_RESET;
+assign	D = DATA_IN;
+assign	CLK = CLOCK;
+assign	EN_H = ENABLE_HIGH;
+assign	EN_L = ENABLE_LOW;
+assign	logic_high = 1;
+
+endmodule

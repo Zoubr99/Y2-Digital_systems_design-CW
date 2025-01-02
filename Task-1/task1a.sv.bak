@@ -1,0 +1,33 @@
+module task1a (
+   output logic P, 	//P output
+   output logic Q,
+   input  logic A,
+   input  logic B,
+   input  logic C    //Inputs A,B,C
+);
+// in wires
+
+wire Ainv;
+wire Binv;
+wire Cinv;
+wire term0;
+wire term1;
+wire term2;
+wire term3;
+
+not u1 (Ainv, A);
+not u2 (Binv, B);
+not u3 (Cinv, C);
+
+and u4 (term0, A, Binv);
+and u5 (term1, C, Binv);
+or u6 (P, term0, term1);
+
+
+or u7 (term2, Binv, Cinv);
+and u8 (Q, Ainv, term2);
+
+
+
+
+endmodule

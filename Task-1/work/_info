@@ -1,0 +1,86 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/user/Documents/GitHub/individual-coursework-c1-Zoubrninety9/Task-1
+vtask1_tb
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1679796791
+!i10b 1
+!s100 =^iKLod7G:DPG52iFg_LA2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IoMMBE5oPLTmCzj@WihI6b0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1679796776
+8C:/Users/user/Documents/GitHub/individual-coursework-c1-Zoubrninety9/Task-1/task1_tb.sv
+FC:/Users/user/Documents/GitHub/individual-coursework-c1-Zoubrninety9/Task-1/task1_tb.sv
+!i122 64
+L0 1 80
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1679796791.000000
+!s107 C:/Users/user/Documents/GitHub/individual-coursework-c1-Zoubrninety9/Task-1/task1_tb.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/user/Documents/GitHub/individual-coursework-c1-Zoubrninety9/Task-1/task1_tb.sv|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vtask1a
+R1
+!s110 1679796790
+!i10b 1
+!s100 Yag:0njcMfnolMCBH;GPf1
+R2
+I6]HY`^A972G5Jd98`>LDT0
+R3
+S1
+R0
+w1679781706
+8C:/Users/user/Documents/GitHub/individual-coursework-c1-Zoubrninety9/Task-1/task1a.sv
+FC:/Users/user/Documents/GitHub/individual-coursework-c1-Zoubrninety9/Task-1/task1a.sv
+!i122 63
+L0 1 34
+R4
+r1
+!s85 0
+31
+!s108 1679796790.000000
+!s107 C:/Users/user/Documents/GitHub/individual-coursework-c1-Zoubrninety9/Task-1/task1a.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/user/Documents/GitHub/individual-coursework-c1-Zoubrninety9/Task-1/task1a.sv|
+!i113 1
+R5
+R6
+vtask1b
+R1
+!s110 1679796789
+!i10b 1
+!s100 h`EmY]@bDk[;=7PdeC?:;2
+R2
+IO1O2iSeT@Q7zoTMe>CScf2
+R3
+S1
+R0
+w1679782787
+8C:/Users/user/Documents/GitHub/individual-coursework-c1-Zoubrninety9/Task-1/task1b.sv
+FC:/Users/user/Documents/GitHub/individual-coursework-c1-Zoubrninety9/Task-1/task1b.sv
+!i122 62
+L0 1 27
+R4
+r1
+!s85 0
+31
+!s108 1679796789.000000
+!s107 C:/Users/user/Documents/GitHub/individual-coursework-c1-Zoubrninety9/Task-1/task1b.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/user/Documents/GitHub/individual-coursework-c1-Zoubrninety9/Task-1/task1b.sv|
+!i113 1
+R5
+R6

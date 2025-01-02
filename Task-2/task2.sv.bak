@@ -1,0 +1,58 @@
+
+module task2 #(parameter int N=16'h000F) (
+   output logic [15:0] Q, //Counter output
+   output logic REL,      //RECYCLE output 
+   input logic CLK,       //CLOCK input 
+   input logic n_OE,      //Output Enable (active LOW) 
+   input n_CEN,           //Count Enable (active LOW)     
+   input n_RESET          //Asynchronous RESET (active LOW)
+);
+
+// i may use reg instead of logic
+//logic [N:0]q_int;
+logic [N:0]count = 0;
+//assign q_int = count;
+
+
+//typedef enum int unsigned {a = 2'b00, b = 2'b01, c = 2'b10, d = 2'b11}counter_state;
+
+//Write solution here
+always_ff @(posedge CLK or posedge n_RESET ) begin : count_status_block
+
+
+
+         if (n_RESET == 1) begin
+            count <= 0;
+         end
+
+         else if (n_CEN == 0 && count != N) begin
+            count <= count +1 ;
+         end
+         else if (count == N) begin
+            count <= 0;
+         end   
+
+         else count <= count;
+
+end
+
+
+always_comb begin
+
+   if (n_OE == 1) begin
+      Q = 1'bz;
+   end 
+   else begin 
+		Q = count;
+   end 
+
+   if (count == 0) begin
+      REL = 1;
+   end
+   else begin 
+      REL = 0;
+   end
+
+end
+
+endmodule 
